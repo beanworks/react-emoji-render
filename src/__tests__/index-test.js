@@ -34,7 +34,7 @@ import renderer from "react-test-renderer";
 
     test("alias containing currency", () => {
         const component = renderer.create(
-            <Component text=":cny:" />
+            <Component text=":cny: :CAD:" />
         );
         let tree = component.toJSON();
         expect(tree).toMatchSnapshot();

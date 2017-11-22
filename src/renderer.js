@@ -65,7 +65,8 @@ export function toArray(text, options = {}) {
   }
 
   function replaceCurrencyAliases(...match) {
-      return currencyAliases[match[1]] || match[0];
+      var currency = match[1].toLowerCase();
+      return currencyAliases[currency] || match[0];
   }
 
   return replace(
