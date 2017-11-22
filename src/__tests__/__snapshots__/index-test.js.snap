@@ -55,6 +55,24 @@ exports[`Emoji a mixture of emoji syntax 1`] = `
 </span>
 `;
 
+exports[`Emoji alias containing currency 1`] = `
+<span
+  className="undefined">
+  <span
+    className={undefined}
+    style={
+      Object {
+        "height": "1em",
+        "margin": "0 .05em 0 .1em",
+        "verticalAlign": "-0.1em",
+        "width": "1em",
+      }
+    }>
+    🇨🇳
+  </span>
+</span>
+`;
+
 exports[`Emoji aliases containing underscores 1`] = `
 <span
   className="">
@@ -440,6 +458,23 @@ exports[`Emojione a mixture of emoji syntax 1`] = `
 </span>
 `;
 
+exports[`Emojione alias containing currency 1`] = `
+<span
+  className="undefined">
+  <img
+    className={undefined}
+    src="http://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f1e8-1f1f3.png"
+    style={
+      Object {
+        "height": "1em",
+        "margin": "0 .05em 0 .1em",
+        "verticalAlign": "-0.1em",
+        "width": "1em",
+      }
+    } />
+</span>
+`;
+
 exports[`Emojione aliases containing underscores 1`] = `
 <span
   className="">
@@ -793,6 +828,23 @@ exports[`Twemoji a mixture of emoji syntax 1`] = `
   <img
     className={undefined}
     src="http://twemoji.maxcdn.com/2/72x72/1f44c-1f3ff.png"
+    style={
+      Object {
+        "height": "1em",
+        "margin": "0 .05em 0 .1em",
+        "verticalAlign": "-0.1em",
+        "width": "1em",
+      }
+    } />
+</span>
+`;
+
+exports[`Twemoji alias containing currency 1`] = `
+<span
+  className="undefined">
+  <img
+    className={undefined}
+    src="http://twemoji.maxcdn.com/2/72x72/1f1e8-1f1f3.png"
     style={
       Object {
         "height": "1em",

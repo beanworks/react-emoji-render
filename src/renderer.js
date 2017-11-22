@@ -8,6 +8,7 @@ import normalizeProtocol from "./normalizeProtocol";
 import unicodeToCodepoint from "./unicodeToCodepoint";
 import aliases from "../data/aliases";
 import asciiAliases from "../data/asciiAliases";
+import currencyAliases from "../data/currencyAliases";
 
 const asciiAliasesRegex = asciiRegex();
 const unicodeEmojiRegex = emojiRegex();
@@ -63,10 +64,15 @@ export function toArray(text, options = {}) {
     return aliases[match[1]] || match[0];
   }
 
+  function replaceCurrencyAliases(...match) {
+      return currencyAliases[match[1]] || match[0];
+  }
+
   return replace(
     text
       .replace(asciiAliasesRegex, replaceAsciiAliases)
-      .replace(aliasesRegex, replaceAliases),
+      .replace(aliasesRegex, replaceAliases)
+      .replace(aliasesRegex, replaceCurrencyAliases),
     unicodeEmojiRegex,
     replaceUnicodeEmoji
   );

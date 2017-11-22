@@ -32,6 +32,14 @@ import renderer from "react-test-renderer";
       expect(tree).toMatchSnapshot();
     });
 
+    test("alias containing currency", () => {
+        const component = renderer.create(
+            <Component text=":cny:" />
+        );
+        let tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+    });
+
     test("aliases containing underscores", () => {
       const component = renderer.create(
         <Component text=":stuck_out_tongue_winking_eye: wow" />
